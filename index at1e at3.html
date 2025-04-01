@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style at1 e at3.css">
+    <title>aula treino</title>
+</head>
+
+<body class="corpo">
+    
+    <button onclick="alterarTexto()">Alterar Texto</button>
+    <p id="txt"> Um ornitorrinco</p>
+
+    <button onclick="window.location.href='index at2.html'">Ir para a atividade 2</button>
+
+    <script>
+        function alterarTexto() {
+        var textoElement = document.getElementById("txt");
+
+        if (textoElement.textContent === "Um ornitorrinco") {
+                textoElement.textContent = "PEERRYY O ORNITORINCO !!!";
+                textoElement.style.color = "white"; // Muda a cor para azul
+                textoElement.style.backgroundColor = "brown"; // Muda o fundo para azul
+            } else {
+                textoElement.textContent = "Um ornitorrinco";
+                textoElement.style.color = "white"; // Retorna para a cor preta
+                textoElement.style.backgroundColor = "darkcyan"; 
+            }
+        }
+    </script>
+</body>
+
+</html>
